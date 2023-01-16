@@ -1,6 +1,54 @@
 # NCUA Call Report Analysis
 
-Hopefully my analysis can be helpful for you as well. If you have any questions or would like to use my analysis or images in your own reports, feel free to reach out to me using info in the [Contact](#Contact) section.
+This project is my attempt to understand the credit union system - of which I'm now both member and employee - better. Find more information about that in the [Project Background](#Project-Background) section. Over time I might spin up a newsletter on Substack with more detailed analysis. Most of the analysis in this project is performed using R and RStudio. 
+
+If you have any questions or would like to use my analysis or images in your own reports, feel free to reach out to me using info in the [Contact](#Contact) section.
+
+* [Assets](#Assets)
+* [Members](#Members)
+* [Ratios](#Ratios)
+
+## Assets
+
+Dollars continue to flow into the credit union system.
+
+![](./Figures/plot.TotalAssetsOverTime.png)
+
+The majority of asset growth in the system has been happening in peer group 6:
+
+![](./Figures/plot.TotalAssetsOverTimeByPeer.png)
+
+Filtering out peer group 6 gives additional context for groups 1-5:
+
+![](./Figures/plot.TotalAssetsOverTimeByPeerNoSix.png)
+
+![](./Figures/plot.TotalAssetsOverTimeByRegion.png)
+
+
+
+## Members
+
+Membership continues to grow overall within the credit union system. But that growth is not evenly distributed as we'll see below.
+
+![](./Figures/plot.MembersOverTime.png)
+
+Most growth is happening in peer group six. The long-term trend for peer groups 1-5 is small or negative growth.
+
+![](./Figures/plot.MembersOverTimeByPeer.png)
+
+Filtering out peer group 6 gives some context:
+
+![](./Figures/plot.MembersOverTimeByPeerNoSix.png)
+
+Filtering out peer groups 5 and 6 shows the decline of members in 1-4 in better detail:
+
+![](./Figures/plot.MembersOverTimeByPeerNoFiveSix.png)
+
+
+
+Region 8, where the largest of peer group 6 credit unions are located, sees the most growth overall.
+
+![](./Figures/plot.MembersOverTimeByRegion.png)
 
 ## Ratios
 
@@ -26,7 +74,7 @@ This ratio uses accounts (ACCT_564A + (564B / 2)) for employee headcount and ACC
 ## Data Notes
 Raw Call Report data is sourced from the NCUA.gov website. It's then filtered down a bit so numbers match up with NCUA summary reports. Only CU types 1 and 2 are included in my analysis, since the NCUA doesn't include non-Federally Insured organizations in theirs. Data is also filtered by asset value to exclude outliers when making visualizations. Very large credit unions like Navy Federal and others skew things quite a bit - there's simply no good comparison to be made unless you're also a massive institution. Any credit union whose assets (ACCT_010) have a Z-score greater than 3 are generally filtered out of visualizations. Refer to footnotes and subtitles for additional filtering information.
 
-## Background
+## Project Background
 
 In early 2022 I took a job with a credit union, the first time I'd ever worked for that kind of financial institution before. The compensation was fair, people seemed great, and the CU passed the smell test when I researched it during the interview process. But after settling in to my new role I realized that I didn't have a great feel for the position of the CU within the greater ecosystem. I knew our asset value, member count, number of branches, etc. but had no idea where we ranked against others in our area. Did we have more delinquent loans than the credit union down the street? Had we made meaningful gains in member count? Did our rations meet or exceed what the regulators expected? I had no idea, and that's the origin of this project.
 

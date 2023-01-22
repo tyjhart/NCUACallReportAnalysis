@@ -4,9 +4,7 @@ This project is my attempt to understand the credit union system - of which I'm 
 
 If you have any questions or would like to use my analysis or images in your own reports, feel free to reach out to me using info in the [Contact](#Contact) section.
 
-* [Assets](#Assets)
-* [Members](#Members)
-* [Ratios](#Ratios)
+## Overview
 
 ## Assets
 
@@ -21,6 +19,8 @@ The majority of asset growth in the system has been happening in peer group 6:
 Filtering out peer group 6 gives additional context for groups 1-5:
 
 ![](./Figures/plot.TotalAssetsOverTimeByPeerNoSix.png)
+
+Assets continue flowing into groups 1-4, albeit at a much more sedate rate than groups 5 and 6:
 
 ![](./Figures/plot.TotalAssetsOverTimeByRegion.png)
 

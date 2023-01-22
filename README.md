@@ -28,11 +28,38 @@ Assets continue flowing into groups 1-4, albeit at a much more sedate rate than 
 
 ## Members
 
-Membership continues to grow overall within the credit union system. But that growth is not evenly distributed as we'll see below.
-
+Membership continues to grow overall within the credit union system:
 ![](./Figures/plot.MembersOverTime.png)
 
-Most growth is happening in peer group six. The long-term trend for peer groups 1-5 is small or negative growth.
+The rate of growth is fairly steady at about 1% per-cycle ([table](./Tables/MemberCountByCycle.md)): 
+
+|Cycle      |Members     |Percentage Change |
+|:----------|:-----------|:-----------------|
+|2017-03-31 |109,384,648 |NA%               |
+|2017-06-30 |110,636,772 |1.14%             |
+|2017-09-30 |111,860,849 |1.11%             |
+|2017-12-31 |112,657,493 |0.71%             |
+|2018-03-31 |114,054,672 |1.24%             |
+|2018-06-30 |115,377,804 |1.16%             |
+|2018-09-30 |116,758,943 |1.2%              |
+|2018-12-31 |117,552,551 |0.68%             |
+|2019-03-31 |118,656,887 |0.94%             |
+|2019-06-30 |119,700,948 |0.88%             |
+|2019-09-30 |120,943,833 |1.04%             |
+|2019-12-31 |121,746,941 |0.66%             |
+|2020-03-31 |122,739,428 |0.82%             |
+|2020-06-30 |123,695,931 |0.78%             |
+|2020-09-30 |125,115,562 |1.15%             |
+|2020-12-31 |125,695,985 |0.46%             |
+|2021-03-31 |127,098,933 |1.12%             |
+|2021-06-30 |128,584,248 |1.17%             |
+|2021-09-30 |130,026,066 |1.12%             |
+|2021-12-31 |130,952,969 |0.71%             |
+|2022-03-31 |132,311,173 |1.04%             |
+|2022-06-30 |133,919,345 |1.22%             |
+|2022-09-30 |135,654,038 |1.3%              |
+
+However, that growth is not evenly distributed between peer groups. Most growth is happening in peer group six. The long-term trend for peer groups 1-5 is small or negative member growth.
 
 ![](./Figures/plot.MembersOverTimeByPeer.png)
 
@@ -43,8 +70,6 @@ Filtering out peer group 6 gives some context:
 Filtering out peer groups 5 and 6 shows the decline of members in 1-4 in better detail:
 
 ![](./Figures/plot.MembersOverTimeByPeerNoFiveSix.png)
-
-
 
 Region 8, where the largest of peer group 6 credit unions are located, sees the most growth overall.
 

@@ -6,6 +6,8 @@ If you have any questions or would like to use my analysis or images in your own
 
 ## Overview
 
+To better understand the credit union system I'm analyzing [Members](#Members), [Assets](#Assets), and [Ratios](#Ratios) right now. Analysis of [Loans](#Loans) is something I'll get to in the future as well.
+
 ## Assets
 
 Dollars continue to flow into the credit union system.
@@ -95,6 +97,28 @@ This ratio uses accounts ACCT_010 for assets and (ACCT_564A + (564B / 2)) for em
 This ratio uses accounts (ACCT_564A + (564B / 2)) for employee headcount and ACCT_083 for member headcount.
 
 ![](./Figures/plot.MembersToEmployees.png)
+
+## Loans
+
+Working on it!
+
+### Auto Loans
+
+Vroom-vroom!
+
+New vehicle loans over time:
+![](./Figures/plot.AmountNewVehLoansOverTime.png)
+
+By peer group:
+![](./Figures/plot.AmountNewVehLoansOverTimeByPeer.png)
+
+By region:
+![](./Figures/plot.AmountNewVehLoansOverTimeByRegion.png)
+
+
+### Payday Loans
+
+Still working on it!
 
 ## Data Notes
 Raw Call Report data is sourced from the NCUA.gov website. It's then filtered down a bit so numbers match up with NCUA summary reports. Only CU types 1 and 2 are included in my analysis, since the NCUA doesn't include non-Federally Insured organizations in theirs. Data is also filtered by asset value to exclude outliers when making visualizations. Very large credit unions like Navy Federal and others skew things quite a bit - there's simply no good comparison to be made unless you're also a massive institution. Any credit union whose assets (ACCT_010) have a Z-score greater than 3 are generally filtered out of visualizations. Refer to footnotes and subtitles for additional filtering information.
